@@ -1,0 +1,9 @@
+<h1> Here come da billz <h1>
+
+<ul>
+	<% @bills.each do |bill| %>
+		<li> <%= bill.name %> </li>
+		<li> <%= bill.amount.to_s %> </li>
+	</br>
+	<% end %>
+<ul>
