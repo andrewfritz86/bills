@@ -1,9 +1,10 @@
-<h1> Here come da billz <h1>
+<h3> Here come da billz <h3>
 
 <ul>
 	<% @bills.each do |bill| %>
-		<li> <%= bill.name %> </li>
-		<li> <%= bill.amount.to_s %> </li>
+		<li> <a href=<%= "/bills/" + bill.id.to_s %>><%= bill.name %></a> 
+<%= bill.amount.to_s %>
+</li>
 	</br>
 	<% end %>
 <ul>
